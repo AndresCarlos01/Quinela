@@ -1,0 +1,94 @@
+body {
+  padding: 20px;
+  background-color: #e1e5f2; /* Light gray background */
+}
+
+.container {
+  background-color: #ffffff; /* White container background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #bfdbf7; /* Blue button color */
+  border-color: #bfdbf7;
+  color: #022b3a; /* Text color */
+}
+
+.btn-primary:hover {
+  background-color: #90caf9; /* Darker shade on hover */
+  border-color: #90caf9;
+}
+
+.prediction-input {
+  width: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px; /* Adjust padding as needed */
+  margin: 2px; /* Adjust margin as needed */
+}
+
+.btn-container {
+  display: flex;
+  margin-top: 15px;
+}
+
+.reset-btn {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+/* Additional styling for predictions */
+.predictions-cell {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #bfdbf7;
+  border-radius: 5px;
+  background-color: #e1e5f2; /* Light gray background */
+  position: relative;
+}
+
+.match-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #ffffff;
+  padding: 5px;
+  border: 1px solid #bfdbf7;
+}
+
+.predictions-cell:hover .match-details {
+  display: block;
+}
+
+/* Styling for print version */
+@media print {
+  .container {
+    box-shadow: none; /* No shadow for print version */
+  }
+
+  .predictions-cell {
+    border: 1px solid #000; /* Solid border for print version */
+    background-color: #ffffff; /* White background for print version */
+  }
+
+  .match-details {
+    display: block; /* Show match details in print version */
+  }
+}

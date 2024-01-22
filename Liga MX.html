@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Liga MX Clausura Predictions</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Liga MX Clausura Predictions - All Fixtures</h2>
+      <table class="table table-bordered table-striped" id="fixturesTable">
+        <thead>
+          <tr>
+            <th>Quinela</th>
+            <!-- Fixture headers will be added dynamically -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Querétaro vs Toluca</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mazatlán FC vs Atlético de San Luis</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Cruz Azul vs Pachuca</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Guadalajara vs Santos</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Monterrey vs Puebla</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Tijuana vs América</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Pumas UNAM vs FC Juarez</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Necaxa vs Atlas</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>León vs Tigres UANL</td>
+            <td>
+              <input
+                type="text"
+                class="form-control prediction-input"
+                maxlength="1"
+              />
+            </td>
+          </tr>
+          <!-- Add more fixture rows based on your requirements -->
+        </tbody>
+      </table>
+
+      <h2>Users Predictions</h2>
+      <table class="table table-bordered" id="usersPredictionsTable">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <!-- Display actual teams playing as headers -->
+            <th>Querétaro vs Toluca</th>
+            <th>Mazatlán FC vs Atlético de San Luis</th>
+            <th>Cruz Azul vs Pachuca</th>
+            <th>Guadalajara vs Santos</th>
+            <th>Monterrey vs Puebla</th>
+            <th>Tijuana vs América</th>
+            <th>Pumas UNAM vs FC Juarez</th>
+            <th>Necaxa vs Atlas</th>
+            <th>León vs Tigres UANL</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="form-group">
+        <label for="usernameInput">Username:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="usernameInput"
+          placeholder="Enter username"
+        />
+      </div>
+
+      <button class="btn btn-primary" onclick="submitUserPrediction()">
+        Submit Prediction
+      </button>
+
+      <div class="btn-container">
+        <button class="btn btn-secondary reset-btn" onclick="resetForm()">
+          Add Another User
+        </button>
+        <button class="btn btn-danger reset-btn" onclick="endPrediction()">
+          End Predictions
+        </button>
+        <!-- Print button added -->
+        <button class="btn btn-success reset-btn" onclick="printPredictions()">
+          Print Predictions
+        </button>
+      </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
